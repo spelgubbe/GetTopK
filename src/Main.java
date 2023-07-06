@@ -20,8 +20,8 @@ public class Main {
 	}
 	Instant start = Instant.now();
 	System.out.println("\nTime is: " + start);
-	//int res1 = FindTopK.findKthLargestPQParallel (test, k);
-	int res1 = FindTopK.findKthLargestPQ (test, k);
+	int res1 = FindTopK.findKthLargestPQParallel (test, k);
+	//int res1 = FindTopK.findKthLargestPQ (test, k);
 	Instant end = Instant.now();
 	Duration elapsed = Duration.between (start, end);
 	System.out.println("Time is: " + Instant.now());

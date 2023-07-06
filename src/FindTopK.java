@@ -47,11 +47,11 @@ public class FindTopK {
 	List<Integer> resultList = new ArrayList<> ();
 	results.sequential ().forEach (resultList::addAll);
 	//System.out.println("ResultList size = " + resultList.size());
-	/*if (resultList.size() > k) {
+	if (resultList.size() > k) {
 	    int diff = resultList.size() - k;
 	    resultList.sort(Integer::compare);
 	    resultList = resultList.subList (diff, resultList.size ());
-	}*/
+	}
 	return resultList;
     }
 
